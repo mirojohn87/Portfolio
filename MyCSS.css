@@ -72,15 +72,15 @@ h3 {
 }
 hr{
     align-self:center;
-    Margin-left: 10%;
-    Margin-right:10%;
+     margin-left: 20%;
+    margin-right: 20%;
 }
 .titles {
     font-size: 20px;
     color: #818181;
     font-family: "Tektur", serif;
-    Margin-left: 15%;
-    Margin-right:15%;
+     margin-left: 20%;
+    margin-right: 20%;
 }
 p {
     color: #818181;
