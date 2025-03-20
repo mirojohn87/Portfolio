@@ -93,5 +93,8 @@ h6 {
     font-family: "Tektur", serif;
 }
 .faceplace {
-     align-self: center;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
