@@ -101,6 +101,6 @@ h6 {
 }
 .faceplace {
      display: block;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
