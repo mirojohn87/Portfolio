@@ -77,6 +77,27 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+        const audio = document.getElementById('audio');
+const playPauseBtn = document.getElementById('play-pause-btn');
+const seekBar = document.getElementById('seek-bar');
+
+playPauseBtn.addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+        playPauseBtn.textContent = 'Pause';
+    } else {
+        audio.pause();
+        playPauseBtn.textContent = 'Play';
+    }
+});
+
+audio.addEventListener('timeupdate', () => {
+    seekBar.value = (audio.currentTime / audio.duration) * 100;
+});
+
+seekBar.addEventListener('input', () => {
+    audio.currentTime = (seekBar.value / 100) * audio.duration;
+});
     </script>
     <footer>
         <h6> Copyright of Jack Ashby 2024. Created by M. Johnson</h6>
