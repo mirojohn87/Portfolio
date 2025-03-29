@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Title and Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu {
+      display: none;
+      background-color: #444;
+      padding: 10px;
+    }
+    .menu.open {
+      display: block;
+    }
+    h1, h3 {
+      margin: 0;
+      padding: 20px;
+    }
+    .content {
+      padding-top: 80px; /* To prevent overlap with the fixed header */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div id="dynamic-title">Dynamic Title</div>
+    <button id="menu-toggle">Open Menu</button>
+  </div>
+  <div class="menu" id="menu">
+    <p>Menu Content</p>
+  </div>
+  <div class="content">
+    <p>Scroll down to change the title size!</p>
+    <p style="height: 2000px;">Keep scrolling...</p>
+  </div>
+
+  <script>
+    const dynamicTitle = document.getElementById('dynamic-title');
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    // Change title size on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        dynamicTitle.innerHTML = '<h3>Dynamic Title</h3>';
+      } else {
+        dynamicTitle.innerHTML = '<h1>Dynamic Title</h1>';
+      }
+    });
+
+    // Toggle menu on button click
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+      menuToggle.textContent = menu.classList.contains('open') ? 'Close Menu' : 'Open Menu';
+    });
+  </script>
+</body>
+</html>
