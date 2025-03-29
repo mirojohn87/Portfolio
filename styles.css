@@ -5,18 +5,40 @@ body {
     padding: 0;
 }
 
-/* Container for the menu and content */
+/* Container styling */
 .container {
     display: flex;
-    align-items: center; /* Vertical alignment */
+    align-items: flex-start;
+}
+
+/* Hamburger styling */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.hamburger .line {
+    background-color: black;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 /* Menu styling */
 .menu {
+    display: none; /* Hidden by default */
     background-color: #333;
     color: white;
     padding: 15px;
     width: 200px; /* Fixed width for the menu */
+    position: absolute;
+    top: 60px; /* Adjust this as needed */
+    left: 0;
 }
 
 .menu a {
@@ -28,5 +50,5 @@ body {
 .content {
     background-color: #f4f4f4;
     padding: 15px;
-    flex: 1; /* Takes up the remaining space */
+    flex: 1; /* Fills the remaining space */
 }
