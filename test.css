@@ -4,6 +4,8 @@
   padding: 20px; 
   width: 200px;
   height: 150px;
+  display: inline-block;
+}
 
 /*
 @media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
