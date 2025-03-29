@@ -3,73 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Title and Menu</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    .header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .menu {
-      display: none;
-      background-color: #444;
-      padding: 10px;
-    }
-    .menu.open {
-      display: block;
-    }
-    h1, h3 {
-      margin: 0;
-      padding: 20px;
-    }
-    .content {
-      padding-top: 80px; /* To prevent overlap with the fixed header */
-    }
-  </style>
+  <title>Fixed Title with Hamburger Menu</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="header">
-    <div id="dynamic-title">Jack Ashby</div>
-    <button id="menu-toggle">Open Menu</button>
-  </div>
-  <div class="menu" id="menu">
-    <p>Menu Content</p>
-  </div>
-  <div class="content">
-    <p>Scroll down to change the title size!</p>
-    <p style="height: 2000px;">Keep scrolling...</p>
-  </div>
-
-  <script>
-    const dynamicTitle = document.getElementById('dynamic-title');
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-
-    // Change title size on scroll
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        dynamicTitle.innerHTML = '<h3>Jack Ashby</h3>';
-      } else {
-        dynamicTitle.innerHTML = '<h1>Jack Ashby</h1>';
-      }
-    });
-
-    // Toggle menu on button click
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('open');
-      menuToggle.textContent = menu.classList.contains('open') ? 'Close Menu' : 'Open Menu';
-    });
-  </script>
+  <header>
+    <h2>Fixed Title</h2>
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776; <!-- Hamburger Icon -->
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script src="script.js"></script>
 </body>
 </html>
