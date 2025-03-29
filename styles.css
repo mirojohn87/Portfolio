@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+h2 {
+  margin: 0;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  top: 50px;
+  right: -200px; /* Hidden by default */
+  width: 200px;
+  background-color: #444;
+  color: white;
+  box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #555;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: #555;
+}
