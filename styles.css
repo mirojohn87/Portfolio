@@ -9,7 +9,7 @@ body {
 .container {
     display: flex;
     align-items: flex-start;
-    background-color: #333; /* Background matches the hamburger */
+    background-color: #f4f4f4; /* Background matches the hamburger */
     padding: 10px;
 }
 
