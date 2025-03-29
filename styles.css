@@ -20,6 +20,7 @@ body {
     width: 40px;
     cursor: pointer;
     margin: 15px;
+   background-color: #f4f4f4; /*added*/
 }
 
 .hamburger .line {
