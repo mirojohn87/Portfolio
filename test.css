@@ -32,6 +32,9 @@ body {
   body {
     background-color: blue;
   }
+  div {
+   margin-left: auto;
+   margin-right: auto;
 }
 
 /* On screens that are 600px or less, set the background color to olive */
