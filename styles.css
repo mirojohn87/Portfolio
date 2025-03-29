@@ -27,7 +27,7 @@ body {
 }
 
 .hamburger .line {
-    background-color: white; /* Stands out against the dark background */
+    background-color: black; /* Stands out against the dark background */
     height: 5px;
     width: 100%;
     border-radius: 5px;
