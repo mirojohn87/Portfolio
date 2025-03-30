@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <title>JSON Example</title>
     <style>
-        H1 {
-            text-align: center;
-        }
         .card {
             border: 2px solid black; /* Black border */
             border-radius: 15px; /* Rounded corners */
@@ -15,6 +12,8 @@
             box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
             width: 200px;
             text-align: center;
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color */
         }
         .details {
             font-size: 0.8em;
@@ -38,8 +37,9 @@
             .then(data => {
                 const namesContainer = document.getElementById('namesContainer');
                 data.forEach(person => {
-                    const card = document.createElement('div');
+                    const card = document.createElement('a');
                     card.className = 'card';
+                    card.href = 'details.html'; // Link to another HTML file
                     card.innerHTML = `
                         <h2>${person.firstName} ${person.lastName}</h2>
                         <div class="details">
