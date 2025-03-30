@@ -54,8 +54,8 @@
         fetch('./test.json')
             .then(res => res.json())
             .then(data => {
-                date.forEach(post => {
-                    listei.insertAdjacentHTML('beforeend','<li>${post.firstname}</li>')
+                data.forEach(post => {
+                    listei.insertAdjacentHTML('beforeend','<li>${post.firstname}," ",${post.lastname}</li>')
                     
                     
                 });
