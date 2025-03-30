@@ -7,7 +7,7 @@ body {
 
 /* Container styling */
 .container {
-    position: sticky;
+    position: fixed;
     display: flex;
     align-items: flex-start;
     background-color: #f4f4f4; /* Background matches the hamburger */
