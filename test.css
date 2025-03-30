@@ -17,6 +17,10 @@
             width: 200px;
             text-align: center;
         }
+        .details {
+            font-size: 0.8em;
+            color: #555;
+        }
 
 @media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
     body {
