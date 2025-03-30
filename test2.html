@@ -45,22 +45,20 @@
 <p>yest test test tedt tedt rdjsisb dhev hdvdh jd dk jdkd h nks b cud. jsbdvek heibev nsjdvnskshsvvbkshdbdvdhsj.</p></div>
     <script src="script.js"></script> <!-- Link to the external JavaScript file -->
 </article>
-    <ul>
-
-    </ul>
-    </ul>
+    <ul id="namesList"></ul>
     <Script>
-        const listel = document.querySelector('ul');
-        fetch('./test.json')
-            .then(res => res.json())
+         // Fetch the JSON file
+        fetch('test.json')
+            .then(response => response.json())
             .then(data => {
-                data.forEach(post => {
-                    listel.insertAdjacentHTML('beforeend',`<li>${post.firstname + " " + post.lastname}</li>`)
-                    
-                    
+                const namesList = document.getElementById('namesList');
+                data.forEach(person => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${person.firstName} ${person.lastName}`;
+                    namesList.appendChild(listItem);
                 });
-             });
-             
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
     </Script>
 </section>
 </body>
