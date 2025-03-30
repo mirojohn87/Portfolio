@@ -45,23 +45,31 @@
 <p>yest test test tedt tedt rdjsisb dhev hdvdh jd dk jdkd h nks b cud. jsbdvek heibev nsjdvnskshsvvbkshdbdvdhsj.</p></div>
     <script src="script.js"></script> <!-- Link to the external JavaScript file -->
 </article>
-    <h1>Names List</h1>
+     <h1>Names List</h1>
     <div id="namesContainer"></div>
-    <Script>
+
+    <script>
         // Fetch the JSON file
-        fetch('test.json')
+        fetch('data.json')
             .then(response => response.json())
             .then(data => {
                 const namesContainer = document.getElementById('namesContainer');
                 data.forEach(person => {
                     const card = document.createElement('div');
                     card.className = 'card';
-                    card.innerHTML = `<h2>${person.firstName} ${person.lastName}</h2>`;
+                    card.innerHTML = `
+                        <h2>${person.firstName} ${person.lastName}</h2>
+                        <div class="details">
+                            <p>Address: ${person.address}</p>
+                            <p>Age: ${person.age}</p>
+                            <p>Phone: ${person.phone}</p>
+                        </div>
+                    `;
                     namesContainer.appendChild(card);
                 });
             })
             .catch(error => console.error('Error fetching JSON:', error));
-    </Script>
+    </script>
 </section>
 </body>
 </html>
