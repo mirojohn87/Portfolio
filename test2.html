@@ -45,12 +45,24 @@
 <p>yest test test tedt tedt rdjsisb dhev hdvdh jd dk jdkd h nks b cud. jsbdvek heibev nsjdvnskshsvvbkshdbdvdhsj.</p></div>
     <script src="script.js"></script> <!-- Link to the external JavaScript file -->
 </article>
+    <ul>
+
+    </ul>
+    </ul>
     <Script>
+        const listel = document.querySelector('ul');
         fetch('./test.json')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
              });
+            .then(data => {
+                date.forEach(post => {
+                    listei.insertAdjacentHTML('beforeend','<li>${post.firstname}</li>')
+                    
+                    
+                })
+             }
     </Script>
 </section>
 </body>
