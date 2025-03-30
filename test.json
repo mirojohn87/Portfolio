@@ -1,5 +1,4 @@
 [
-  {"firstName":"John", "lastName":"Doe"},
-  {"firstName":"Anna", "lastName":"Smith"},
-  {"firstName":"Peter", "lastName":"Jones"}
+   {"firstName": "John", "lastName": "Doe", "address": "123 Main St", "age": 30, "phone": "555-1234"},
+    {"firstName": "Jane", "lastName": "Smith", "address": "456 Elm St", "age": 25, "phone": "555-5678"}
 ]
