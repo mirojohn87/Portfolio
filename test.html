@@ -17,6 +17,10 @@
             text-align: center;
             text-decoration: none; /* Remove underline from links */
             color: inherit; /* Inherit text color */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        .card:hover {
+            background-color: lightgrey; /* Light grey background on hover */
         }
         .details {
             font-size: 0.8em;
@@ -26,6 +30,10 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+        }
+        .card img {
+            width: 100%; /* Full width image */
+            border-radius: 15px 15px 0 0; /* Rounded corners for the top of the image */
         }
     </style>
 </head>
@@ -44,6 +52,7 @@
                     card.className = 'card';
                     card.href = 'details.html'; // Link to another HTML file
                     card.innerHTML = `
+                        <img src="${person.imageUrl}" alt="${person.firstName} ${person.lastName}">
                         <h2>${person.firstName} ${person.lastName}</h2>
                         <div class="details">
                             <p>Address: ${person.address}</p>
