@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger Menu</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <title>Unified Page</title>
+    <link rel="stylesheet" href="testtest.css"> <!-- Link to separate CSS file -->
 </head>
 <body>
+
 <header>
     <div class="container">
-        <!-- Hamburger icon -->
         <div class="hamburger" id="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-
-        <!-- Menu -->
         <div class="menu" id="menu">
             <h2>Menu</h2>
             <ul>
@@ -25,51 +23,12 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-
-        <!-- Content -->
-        <div class="content">
-            <h1>Jack Ashby</h1>
-            <p>This is where your main content will be displayed.</p>
-        </div>
     </div>
 </header>
-<section>
-<article>
-<div class="rcorners">
-<h3>test</h3>
-<p>yest test test tedt tedt rdjsisb dhev hdvdh jd dk jdkd h nks b cud. jsbdvek heibev nsjdvnskshsvvbkshdbdvdhsj.</p>
-</div>
-<div class="rcorners"><h3>test</h3>
-<p>yest test test tedt tedt rdjsisb dhev hdvdh jd dk jdkd h nks b cud. jsbdvek heibev nsjdvnskshsvvbkshdbdvdhsj.</p></div>
-<div class="rcorners"><h3>test</h3>
-<p>yest test test tedt tedt rdjsisb dhev hdvdh jd dk jdkd h nks b cud. jsbdvek heibev nsjdvnskshsvvbkshdbdvdhsj.</p></div>
-    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
-</article>
-     <h1>Names List</h1>
-    <div id="namesContainer"></div>
 
-    <script>
-        // Fetch the JSON file
-        fetch('test.json')
-            .then(response => response.json())
-            .then(data => {
-                const namesContainer = document.getElementById('namesContainer');
-                data.forEach(person => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    card.innerHTML = `
-                        <h2>${person.firstName} ${person.lastName}</h2>
-                        <div class="details">
-                            <p>Address: ${person.address}</p>
-                            <p>Age: ${person.age}</p>
-                            <p>Phone: ${person.phone}</p>
-                        </div>
-                    `;
-                    namesContainer.appendChild(card);
-                });
-            })
-            .catch(error => console.error('Error fetching JSON:', error));
-    </script>
-</section>
+<h1>Names List</h1>
+<div id="namesContainer"></div>
+
+<script src="hamburger.js"></script> <!-- Link to separate JS file -->
 </body>
 </html>
