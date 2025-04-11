@@ -1,0 +1,47 @@
+/* General styles */
+h1 {
+    text-align: center;
+}
+
+/* Card styles */
+.card {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 16px;
+    margin: 12px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    width: 38%;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: lightgrey;
+}
+
+.details {
+    font-size: 0.8em;
+    color: #555;
+}
+
+/* Name container */
+#namesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card image */
+.card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Responsive design */
+@media (max-width: 1080px) {
+    .card {
+        width: 100%;
+    }
+}
