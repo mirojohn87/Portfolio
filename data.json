@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Item 1",
+        "image": "image1.jpg",
+        "description": "Short description here.",
+        "link": "page1.html"
+    },
+    {
+        "title": "Item 2",
+        "image": "image2.jpg",
+        "description": "Another description.",
+        "link": "page2.html"
+    }
+]
