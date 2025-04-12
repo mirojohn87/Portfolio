@@ -2,13 +2,121 @@
     {
         "title": "Item 1",
         "image": "image1.jpg",
-        "description": "Short description here.",
+        "description": "Short description for item 1.",
         "link": "page1.html"
     },
     {
         "title": "Item 2",
         "image": "image2.jpg",
-        "description": "Another description.",
+        "description": "Interesting content related to item 2.",
         "link": "page2.html"
+    },
+    {
+        "title": "Item 3",
+        "image": "image3.jpg",
+        "description": "A small summary of item 3.",
+        "link": "page3.html"
+    },
+    {
+        "title": "Item 4",
+        "image": "image4.jpg",
+        "description": "Details about item 4.",
+        "link": "page4.html"
+    },
+    {
+        "title": "Item 5",
+        "image": "image5.jpg",
+        "description": "A concise overview of item 5.",
+        "link": "page5.html"
+    },
+    {
+        "title": "Item 6",
+        "image": "image6.jpg",
+        "description": "A short introduction to item 6.",
+        "link": "page6.html"
+    },
+    {
+        "title": "Item 7",
+        "image": "image7.jpg",
+        "description": "A brief look at item 7.",
+        "link": "page7.html"
+    },
+    {
+        "title": "Item 8",
+        "image": "image8.jpg",
+        "description": "An explanation of item 8.",
+        "link": "page8.html"
+    },
+    {
+        "title": "Item 9",
+        "image": "image9.jpg",
+        "description": "Overview of item 9.",
+        "link": "page9.html"
+    },
+    {
+        "title": "Item 10",
+        "image": "image10.jpg",
+        "description": "An interesting fact about item 10.",
+        "link": "page10.html"
+    },
+    {
+        "title": "Item 11",
+        "image": "image11.jpg",
+        "description": "Details related to item 11.",
+        "link": "page11.html"
+    },
+    {
+        "title": "Item 12",
+        "image": "image12.jpg",
+        "description": "Background of item 12.",
+        "link": "page12.html"
+    },
+    {
+        "title": "Item 13",
+        "image": "image13.jpg",
+        "description": "Short content for item 13.",
+        "link": "page13.html"
+    },
+    {
+        "title": "Item 14",
+        "image": "image14.jpg",
+        "description": "A fun fact about item 14.",
+        "link": "page14.html"
+    },
+    {
+        "title": "Item 15",
+        "image": "image15.jpg",
+        "description": "A quick introduction to item 15.",
+        "link": "page15.html"
+    },
+    {
+        "title": "Item 16",
+        "image": "image16.jpg",
+        "description": "A glance at item 16.",
+        "link": "page16.html"
+    },
+    {
+        "title": "Item 17",
+        "image": "image17.jpg",
+        "description": "Informative snippet about item 17.",
+        "link": "page17.html"
+    },
+    {
+        "title": "Item 18",
+        "image": "image18.jpg",
+        "description": "A summary of item 18.",
+        "link": "page18.html"
+    },
+    {
+        "title": "Item 19",
+        "image": "image19.jpg",
+        "description": "A brief detail about item 19.",
+        "link": "page19.html"
+    },
+    {
+        "title": "Item 20",
+        "image": "image20.jpg",
+        "description": "A description of item 20.",
+        "link": "page20.html"
     }
 ]
