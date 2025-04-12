@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unified Page</title>
-    <link rel="stylesheet" href="testtest.css"> <!-- Link to separate CSS file -->
+    <title>Dynamic Cards Layout</title>
+    <link rel="stylesheet" href="teststyles.css">
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="hamburger" id="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <div class="menu" id="menu">
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</header>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <h1>Page Title</h1>
+    </header>
 
-<h1>Names List</h1>
-<div id="namesContainer"></div>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-<script src="hamburger.js"></script> <!-- Link to separate JS file -->
+    <main id="card-container"></main>
+
+    <script src="script.js"></script>
 </body>
 </html>
