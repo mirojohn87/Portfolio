@@ -5,7 +5,6 @@
     <meta name="description" content="Personal webpage of Jack Ashby">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J.Ashby Web Page</title>
-    <link rel="stylesheet" href="MyCSS.css">
 </head>
 <body>
     <header>
@@ -26,10 +25,6 @@
             <div class="titles">
                 Podcast
                 <br>
-                <div id="audio-player">
-    <button id="play-pause-btn">Play</button>
-    <input type="range" id="seek-bar" value="0">
-    <audio id="audio" src="your-audio-file.mp3"></audio>
 </div>
             </div>
             <p>Magna dolor dolore iusto consetetur praesent adipiscing dolor est facer dolore diam et takimata aliquyam dolore gubergren sanctus luptatum justo nostrud ea autem dolores quis cl[...]
@@ -42,38 +37,7 @@
             <hr />
         </article>
     </section>
-    <script>
-        /* Set the width of the side navigation to 250px */
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        /* Set the width of the side navigation to 0 */
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-        const audio = document.getElementById('audio');
-const playPauseBtn = document.getElementById('play-pause-btn');
-const seekBar = document.getElementById('seek-bar');
-
-playPauseBtn.addEventListener('click', () => {
-    if (audio.paused) {
-        audio.play();
-        playPauseBtn.textContent = 'Pause';
-    } else {
-        audio.pause();
-        playPauseBtn.textContent = 'Play';
-    }
-});
-
-audio.addEventListener('timeupdate', () => {
-    seekBar.value = (audio.currentTime / audio.duration) * 100;
-});
-
-seekBar.addEventListener('input', () => {
-    audio.currentTime = (seekBar.value / 100) * audio.duration;
-});
-    </script>
+   
     <footer>
         <h6> Copyright of Jack Ashby 2024. Created by M. Johnson</h6>
     </footer>
