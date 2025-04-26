@@ -1,1 +1,69 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 60px; /* Offset for fixed header */
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            z-index: 1000;
+        }
+
+        .hamburger {
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        #menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 200px;
+            background-color: #444;
+        }
+
+        #menu ul {
+            list-style: none;
+        }
+
+        #menu ul li {
+            padding: 10px;
+        }
+
+        #menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
