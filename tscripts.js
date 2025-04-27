@@ -1,6 +1,4 @@
-
-
-        // Fetch JSON and generate cards
+  // Fetch JSON and generate cards
         fetch("data.json")
             .then(response => response.json())
             .then(data => {
