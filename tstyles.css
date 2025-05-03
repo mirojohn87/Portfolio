@@ -76,6 +76,10 @@
     color: white;
     padding: 20px;
 }
+.cnt {
+  text-align: center;
+  border: 3px solid green;
+}
 
 @media screen and (max-height: 450px) {
 #card-container {
