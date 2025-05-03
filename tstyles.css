@@ -77,6 +77,7 @@
     padding: 20px;
 }
 .cnt {
+  text_size: 40px;          
   text-align: center;
   border: 3px solid grey;
 }
