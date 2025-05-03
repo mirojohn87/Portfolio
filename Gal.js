@@ -6,9 +6,9 @@ class Gallery {
         
         // Sample images array - replace with your images
         this.images = [
-            'image1.jpg',
-            'image2.jpg',
-            'image3.jpg'
+            'img1.jpg',
+            'img2.jpg',
+            'img3.jpg'
         ];
         
         this.init();
