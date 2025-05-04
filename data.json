@@ -1,7 +1,7 @@
 [
     {
         "title": "Item 1",
-        "image": "image1.jpg",
+        "image": "img1.jpg",
         "description": "Short description for item 1.",
         "link": "page1.html"
     },
