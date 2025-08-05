@@ -1,38 +1,212 @@
-<!DOCTYPE HTML>
-  <HTML>
-    <Head>
-      <Title>Mike Johnson | Home Page</Title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mike | Professional Analyst</title>
+  <style>
+    :root {
+      --primary-color: #007B8A;
+      --accent-color: #005f6b;
+      --bg-light: #f9f9f9;
+      --text-dark: #333;
+      --header-bg: #1a1a1a;
+    }
 
-      <Style>
-body{
-    background-color:black;
-  }
-  h1 {
-    Font-size:200px;
-    text-align:center;
-    font-family:verdana;
-    color:white;
-  }
-hr {
-   color:white;
-}
-</style>
-    </Head>
-    <Body>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-     <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-     <hr>
-     <H1>Coming soon</H1>
-     <hr>
-    </Body>
-  </HTML>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #222;
+      padding: 0.75rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--primary-color);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .profile-pic {
+      flex: 1 1 250px;
+      max-width: 250px;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 2 1 400px;
+    }
+
+    .portfolio-item {
+      background-color: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-3px);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-color);
+    }
+
+    footer {
+      background-color: var(--header-bg);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--primary-color);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mike</h1>
+    <p>Professional Analyst | Data-Driven Decision Maker</p>
+    <a href="#contact" class="btn">Let’s Connect</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="profile-pic">
+        <img src="your-photo.jpg" alt="Photo of Mike" />
+      </div>
+      <div class="about-text">
+        <p>I’m a versatile analyst with a passion for transforming data into actionable insights. With experience in operations, territory management, and hospitality, I bring clarity and structure to complex challenges.</p>
+        <ul>
+          <li>Expert in Excel and structured reporting</li>
+          <li>Skilled in resume optimization and professional communication</li>
+          <li>Creative world-builder with a strategic mindset</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item">
+      <h3>Sports Data Dashboard</h3>
+      <p>Compiled and visualized ECHL and Vegas Golden Knights stats into actionable Excel reports.</p>
+    </div>
+    <div class="portfolio-item">
+      <h3>Resume Optimization</h3>
+      <p>Tailored resumes for operations and hospitality roles using ATS-friendly formatting and industry buzzwords.</p>
+    </div>
+    <div class="portfolio-item">
+      <h3>D&D Campaign Design</h3>
+      <p>Built immersive settings with thematic mechanics and interconnected lore—blending storytelling with structure.</p>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Download my latest resume tailored for analyst roles:</p>
+    <a href="#" class="btn">Download Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s connect and collaborate. Reach out via email or LinkedIn:</p>
+    <ul>
+      <li>Email: mike@example.com</li>
+      <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mike | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
